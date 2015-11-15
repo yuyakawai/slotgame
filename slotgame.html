@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!--
+// slotgame.html
+//
+// 競技プログラミング
+//
+// * @category   game
+// * @author     Yuya Kawai <hoge@hoge.com>
+// * @copyright  copyright © 2015 Yuya Kawai. All Rights Reserved.
+// * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+// * @version    1.0
+//
+-->
+
+
+<html>
+<head><title>スロットゲーム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="slotgame.js"></script>
+</head>
+<body background="img/background.jpg">
+<font size="6">スロットゲーム</font>
+<p>スロットゲームです。同じ絵柄をそろえよう！！</p>
+
+<hr>
+<div style="display:none;">
+<div id="slot_1" style="position:absolute">
+<img src="img/slot_1.png" style="position:relative;">
+</div>
+<div id="slot_2" style="position:absolute">
+<img src="img/slot_2.png" style="position:relative;">
+</div>
+<div id="slot_3" style="position:absolute">
+<img src="img/slot_3.png" style="position:relative;">
+</div>
+<div id="slot_4" style="position:absolute">
+<img src="img/slot_4.png" style="position:relative;">
+</div>
+<div id="slot_5" style="position:absolute">
+<img src="img/slot_5.png" style="position:relative;">
+</div>
+</div>
+
+<div id="showslot" style="position:relative; left:5px; width:270px; height:70px"></div>
+
+<form action="#">
+<div style="position:relative; top:10px; width:270px; height:50px">
+<input type="button" value="ストップ" onClick="StopSlot(0)" style="position:relative; left:5px; width:70px; height:30px;">
+<input type="button" value="ストップ" onClick="StopSlot(1)" style="position:relative; left:30px; width:70px; height:30px;">
+<input type="button" value="ストップ" onClick="StopSlot(2)" style="position:relative; left:55px; width:70px; height:30px;">
+</div>
+<input type="button" value="スタート" onClick="StartSlot()" style="position:relative; left:5px; width:270px; height:30px;">
+</form>
+<div id="message" style="position:relative;"></div>
+</body>
+</html>
