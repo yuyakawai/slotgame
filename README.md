@@ -1,0 +1,2 @@
+# slotgame
+Simply slotgame.
